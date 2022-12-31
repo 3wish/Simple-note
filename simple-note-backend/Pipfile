@@ -1,0 +1,22 @@
+[[source]]
+url = "https://mirrors.aliyun.com/pypi/simple/" 
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = {extras = ["all"], version = "*"}
+sqlalchemy = "*"
+pymysql = "*"
+python-multipart = "*"
+python-jose = {extras = ["cryptography"], version = "*"}
+passlib = {extras = ["bcrypt"], version = "*"}
+alembic = "*"
+pytest = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+
+[pipenv]
+allow_prereleases = true
